@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    border-color: #D4D0C8;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F2F0EB;
+    color: #1C1C1A;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+  code, .font-mono, .mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@layer components {
+  .hairline {
+    border-bottom: 1px solid #D4D0C8;
+  }
+  .hairline-top {
+    border-top: 1px solid #D4D0C8;
+  }
+  .hairline-all {
+    border: 1px solid #D4D0C8;
+  }
+  .terminal-block {
+    background-color: #1C1C1A;
+    color: #F2F0EB;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 1.5rem;
+    border-radius: 4px;
+  }
+  .grade-letter {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 1;
+  }
+  .editorial-headline {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+  .section-rule {
+    border-top: 1px solid #D4D0C8;
+    margin: 0;
+  }
+}
+
+::selection {
+  background-color: #2D5A27;
+  color: #F2F0EB;
+}
